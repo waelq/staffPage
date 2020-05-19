@@ -9,45 +9,54 @@
 
 </head>
 <body>
-	<br><br>
-	<h1>Form Staff</h1>
+	<form id="form">
+		<div id="inner">
+<label id="lfname"> First name</label>	
+<input type="text" id="fname" name="" required maxlength="20">
 
-<div>
-  <form>
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-<br>
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-<br>
-<label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email.." required>
-<br>
+<label id="llname"> Last name</label>	
+<input type="text" id="lname" name="" required maxlength="20">
 
-    <label for="Jop">Type Jop</label>
-    <select id="Jop" name="Jop"  required>
-      <option value="trainee">trainee</option>
-      <option value="Officer">Officer</option>
-      <option value="Manager">Manager</option>
-      <option value="Supervisor">Supervisor</option>
-    </select>
-<br>
+<label id="lemail">Email</label>	
+<input type="email" id="email" name="" required maxlength="40">
 
-    <label for="age">Age</label>
-    <input type="number" id="age" name="age" placeholder="Your age.." min="18" max="62" required>
-    <br>
+<label id="lagg"> Agg </label>	
+<input type="number" id="age" name=""required max="60" min="18">
 
-    <label for="lname">Gender</label>
-    <input type="radio" class="gender" name="gender" required>Male
-    <input type="radio" class="gender" name="gender" required>Female
-    <br>
-  
-    
-  </form>
-  <button id="add">Add</button>
-    <button id="Display">Display</button>
+<label id="lphone">N.Phone</label>	
+<input type="number" id="phone" name="" required maxlength="10">
 </div>
 
-	<script href="script.js"></script>	
+<div id="option">
+	<label id="ljop">Type Jop</label>
+	<select  id="select" required>
+		<optgroup>
+			<option>trainee</option>
+			<option>Officer</option>
+			<option>Manager</option>
+			<option>Supervisor</option>
+
+		</optgroup>
+	</select>
+	<br><br>
+			<label>Gender</label>
+			
+			<input type="radio" id="male" name="gender" class="gender" value="male" required>Male
+			<input type="radio" id="other" name="gender" class="gender" value="other" required>Other
+			<input type="radio" id="female" name="gender" class="gender" value="female" required>Female
+			<br><br>
+			<button id="add">add</button><br>
+			<button id="display">Display</button>
+
+</div>
+
+</form>
+<br>
+
+<ul>
+	
+</ul>
+<script src="script.js"></script>	
+
 </body>
 </html>
