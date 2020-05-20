@@ -1,5 +1,5 @@
 body{
-	background-color: rgb(0,80,80);
+	background-color: #eee6ff;
 	align-items: center;
 }
 input ,select,[type = radio]{
@@ -27,7 +27,7 @@ label {
 }
 div {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #d6d6c2;
   padding: 20px;
   max-width: 50%;
 
@@ -35,7 +35,6 @@ div {
   #inner{
   float: left;
   width: 50%;
-  
   margin: 2px 10px;
   display: inline;
    flex-basis : 40%;
@@ -44,7 +43,6 @@ div {
 #option {
   float: left;
   width: 400px;
- 
   margin:  2px 10px;
   display: block;
    flex-basis : 40%;
@@ -56,6 +54,7 @@ button{
 		 display: flex;
 		flex-basis : 50%;
 		max-width: 100%;
+      max-height: 50%;
 	}
 
 #male,#female,#other{
@@ -79,3 +78,39 @@ button{
 
 #add:hover ,#display:hover {
   background-color: #85a049;
+}
+table {
+  max-width: 75%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #b3b3ff;
+}
+.edit ,.delete{
+  border-radius: 25%;
+  background-color: #ffcccc;
+  color: black;
+  padding: 5px 5px;
+  margin: 5x 5px;
+  border-radius: 4px;
+  cursor: pointer;
+     font-size: 14px;
+
+}
+.edit:hover ,.delete:hover {
+  background-color: #ff1a1a
+;
+}
+
