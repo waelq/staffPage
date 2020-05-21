@@ -26,7 +26,7 @@ var button = document.getElementById("add")
 var display = document.getElementById("display")
 
 var numberStaff = [];
-
+//////Check
 button.onclick=function () {
 		if(fname.value === ""){
 			alert("Fill Your First Name Plz")
@@ -61,7 +61,7 @@ button.onclick=function () {
 		
 }
 
-
+//////////Add
 function myFunction() {
 $('#table tbody').empty();
   var dis = numberStaff;
@@ -118,7 +118,7 @@ dis =[];
 
 
 
-
+/////////Delete
 
 $('table').on('click', '.delete', function(e){
 	var array = $( "tr" ).toArray() ;
@@ -128,7 +128,29 @@ $('table').on('click', '.delete', function(e){
 		console.log(numberStaff)
 
 	})
-//numberStaff =  numberStaff.slice(index,1)
-//
 
-
+////////Edit
+  
+         /*   function editHtmlTbleSelectedRow()
+            {
+            	 table = document.getElementById("table");
+            	 for(var i = 1; i < table.rows.length; i++){
+              
+                    table.rows[i].cells[8].onclick = function()
+                    {
+                //var index =  $(this).closest('tr')
+                table.rows[index].cells[1].innerHTML = fname.value;
+                table.rows[index].cells[2].innerHTML = lname.value;
+                table.rows[index].cells[3].innerHTML = email.value;
+                table.rows[index].cells[4].innerHTML = age.value;
+                table.rows[index].cells[5].innerHTML = phone.value;
+                table.rows[index].cells[6].innerHTML = select.value;
+                table.rows[index].cells[7].innerHTML = gender;
+                table.rows[index].cells[8].innerHTML = "<button class='edit';>Editar</button>";
+                table.rows[index].cells[9].innerHTML =  "<button class='delete';>Delete</button>";;
+             }
+            }
+                    } 
+                    editHtmlTbleSelectedRow();
+       
+*/
